@@ -1,4 +1,4 @@
-# edtech
+# Edtech
 
 A new Flutter project.
 
