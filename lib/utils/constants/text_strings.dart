@@ -108,7 +108,7 @@ class KTexts {
   static const String resendEmailIn = "إعادة إرسال البريد الإلكتروني في";
 
   // -- Authentication Headings
-  static const String loginTitle = "مرحبًا مجددًا،";
+  static const String loginTitle = "EdTech";
   static const String loginSubTitle =
       "اكتشف الخيارات اللامحدودة والراحة الفائقة.";
   static const String signupTitle = "لنقم بإنشاء حسابك";

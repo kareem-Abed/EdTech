@@ -14,7 +14,7 @@ class KFullScreenLoader {
         canPop: false,
         child: Container(
           color: KHelperFunctions.isDarkMode(Get.context!)
-              ? KColors.dark
+              ? KColors.black
               : KColors.white,
           width: double.infinity,
           height: double.infinity,

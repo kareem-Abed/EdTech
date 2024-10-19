@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:edtech/utils/constants/image_strings.dart';
+// import 'package:edtech/utils/constants/image_strings.dart';
 import 'package:edtech/utils/constants/sizes.dart';
 import 'package:edtech/utils/constants/text_strings.dart';
-import 'package:edtech/utils/helpers/helper_functions.dart';
+// import 'package:edtech/utils/helpers/helper_functions.dart';
 
 class LoginHeader extends StatelessWidget {
   const LoginHeader({
@@ -11,7 +11,7 @@ class LoginHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = KHelperFunctions.isDarkMode(context);
+    // final dark = KHelperFunctions.isDarkMode(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
@@ -22,9 +22,10 @@ class LoginHeader extends StatelessWidget {
         //       AssetImage(dark ? TImages.lightAppLogo : TImages.darkAppLogo),
         // ),
         CircleAvatar(
-          radius: 60,
-          backgroundImage:
-              AssetImage(dark ? KImages.lightAppLogo : KImages.darkAppLogo),
+          radius: 54,
+          // backgroundImage:
+          //     AssetImage(dark ? KImages.lightAppLogo : KImages.darkAppLogo),
+          backgroundColor: Colors.transparent,
         ),
 
         Text(
