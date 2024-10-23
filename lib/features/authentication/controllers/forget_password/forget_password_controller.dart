@@ -32,7 +32,7 @@ class ForgetPasswordController extends GetxController {
           .sendPasswordResetEmail(email.text.trim());
 
       KFullScreenLoader.stopLoading();
-      KLoaders.sucssessSnackBar(
+      KLoaders.successSnackBar(
           title: 'تم إرسال البريد',
           message: 'تم إرسال البريد الإلكتروني لتغير كلمة السر بنجاح');
       Get.to(() => ResetPassword(
@@ -59,7 +59,7 @@ class ForgetPasswordController extends GetxController {
 
       KFullScreenLoader.stopLoading();
 
-      KLoaders.sucssessSnackBar(
+      KLoaders.successSnackBar(
           title: 'تم إرسال البريد',
           message: 'تم إرسال البريد الإلكتروني لتغير كلمة السر بنجاح');
   

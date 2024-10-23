@@ -8,6 +8,8 @@ import 'package:persistent_bottom_nav_bar_plus/persistent_bottom_nav_bar_plus.da
 import 'package:edtech/utils/constants/colors.dart';
 import 'package:edtech/utils/helpers/helper_functions.dart';
 
+import 'features/weekly_calendar/screens/weekly_calendar/weekly_calendar.dart';
+
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});
 
@@ -92,11 +94,13 @@ class NavigationController extends GetxController {
       PersistentTabController(initialIndex: 0);
 
   final List<Widget> screens = [
-    home(),
-    home(),
-    home(),
-    home(),
-    home(),
+    const WeeklyCalendarScreen(
+
+    ),
+    const home(),
+    const home(),
+    const home(),
+    const home(),
   ];
 
   @override
@@ -123,7 +127,7 @@ class home extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("Home"),
+              const Text("Home"),
               ElevatedButton(
                 onPressed: () {
                   AuthenticationRepository.instance.logout();

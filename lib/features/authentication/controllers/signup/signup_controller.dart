@@ -63,7 +63,7 @@ class SignupController extends GetxController {
       await userRepository.saveUserRecord(newUser);
       //
       // TFullScreenLoader.stopLoading();
-      KLoaders.sucssessSnackBar(
+      KLoaders.successSnackBar(
           title: 'تهانينا', message: "لقد تم إنشاء حسابك! ");
       await AuthenticationRepository.instance
           .loginWithEmailAndPassword(email.text.trim(), password.text.trim());

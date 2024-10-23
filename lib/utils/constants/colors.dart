@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 class KColors {
-// static const Color primary = Color(0xFFF57C00);
-  static const Color primary = Color(0xFF3D5CFF);
+  // Primary colors
+  static const Color primary =Color.fromARGB(255, 3, 169, 244);
+  // static const Color primary =Color(0xFF4379EE);
 
-  static const Color secondary = Color(0xFFFFE24B);
+  static const Color secondary = Color(0xFF1f2c34);
   static const Color accent = Color(0xFFb0c7ff);
 
   // Text colors
@@ -37,11 +38,30 @@ class KColors {
   static const Color info = Color(0xFF1976D2);
 
   // Neutral Shades
-  static const Color black = Color(0xFF161622);
+  static const Color black = Color(0xFF232323);
   static const Color darkerGrey = Color(0xFF4F4F4F);
   static const Color darkGrey = Color(0xFF939393);
   static const Color grey = Color(0xFFE0E0E0);
   static const Color softGrey = Color(0xFFF4F4F4);
   static const Color lightGrey = Color(0xFFF9F9F9);
   static const Color white = Color(0xFFFFFFFF);
+
+  //dark mode colors
+  // static const Color darkModeBackground = Color(0xFF1B2431);
+  // static const Color darkModeSideMenuBackground = Color(0xFF273142);
+  // static const Color darkModeCard = Color(0xFF273142);
+  // static const Color darkModeBorder = Color(0xFF313D4F);
+  // static const Color darkModeSubCard = Color(0xFF323D4E);
+  // static const Color darkModeCardBorder = Color(0xFF3C3C3C);
+  static const Color darkModeCardText = Color(0xFFE0E0E0);
+
+
+  //------------
+static const Color darkModeBackground = Color(0xFF272727);
+
+static const Color darkModeCard =  Color(0xFF232323);
+static const Color darkModeBorder = Color(0xFF3A3A3A);
+static const Color darkModeSubCard = Color(0xFF383838);
+static const Color darkModeCardBorder = Color(0xFF444444);
+
 }

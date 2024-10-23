@@ -21,7 +21,7 @@ class VerifyEmailController extends GetxController {
   sendEmailVerification() async {
     try {
       await AuthenticationRepository.instance.sendEmailVerification();
-      KLoaders.sucssessSnackBar(
+      KLoaders.successSnackBar(
           message:
               "يرجى التحقق من صندوق البريد الخاص بك والتحقق من بريدك الإلكتروني",
           title: 'تم إرسال البريد الإلكتروني ');

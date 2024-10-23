@@ -46,7 +46,7 @@ class KLoaders {
     }
   }
 
-  static void sucssessSnackBar(
+  static void successSnackBar(
       {required String title, message = '', duration = 3}) {
     if (!isSnackbarActive) {
       isSnackbarActive = true;
