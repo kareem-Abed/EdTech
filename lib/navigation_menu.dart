@@ -1,4 +1,6 @@
 import 'package:edtech/data/repositories/authentication/authentication_repositoris.dart';
+import 'package:edtech/features/qr/qrGenerator.dart';
+import 'package:edtech/features/qr/scaner.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -94,11 +96,13 @@ class NavigationController extends GetxController {
       PersistentTabController(initialIndex: 0);
 
   final List<Widget> screens = [
+    QRGeneratorScreen(),
+    QRScannerScreen(),
     const WeeklyCalendarScreen(
 
     ),
-    const home(),
-    const home(),
+    // const home(),
+
     const home(),
     const home(),
   ];

@@ -40,19 +40,21 @@ class AuthenticationRepository extends GetxController {
       //           ));
       //     }
     } else {
-      Get.offAll(() => const LoginScreen());
+      Get.offAll(() => const NavigationMenu());
+
+      // Get.offAll(() => const LoginScreen());
+
       // deviceStorage.writeIfNull('isFirstTime', true);
       // (deviceStorage.read('isFirstTime') != true)
-          // ? Get.offAll(() => const LoginScreen())
-          // : Get.offAll(() => const OnBoardingScreen());
+      // ? Get.offAll(() => const LoginScreen())
+      // : Get.offAll(() => const OnBoardingScreen());
     }
   }
 
   /*-----------------email & password sign in----------------*/
 // login
   Future<UserCredential> loginWithEmailAndPassword(
-      String email, String password)
-  async {
+      String email, String password) async {
     try {
       return await _auth.signInWithEmailAndPassword(
           email: email, password: password);
